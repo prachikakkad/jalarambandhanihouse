@@ -1,0 +1,162 @@
+{% extends 'Basic_Home.html' %}
+{% block css %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+{% load static %}
+<link rel="stylesheet" href="{% static 'Basic.css' %}">
+<link rel="stylesheet" href="{% static 'Home.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock css %}
+{% block body %}
+
+<body>
+    <div class="h2container">
+        <h2>Best Shopping option for ladies<br>
+            Get all latest Ladies Dresses at<br>
+            Reasonable Price. Get Western <br>
+            And Indian Dresses Both !<br>
+        </h2>
+        <div class="imgbx">
+            <img src="https://i.ibb.co/L8KMsNH/Whats-App-Image-2022-05-26-at-9-16-41-PM.jpg">
+        </div>
+        <div class="btn_container">
+            <a href="shop" class="btn" id="btn">Explore Now &#8594;</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="wrapper">
+            <div class="box div-1">
+                <i class="fa fa-quote-left quote"></i>
+                <p>Clothes ordered from you are awesome and good cloth material. Loved it thank you so much !</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">
+                            Radha Chougule
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box div-2">
+                <i class="fa fa-quote-left quote"></i>
+                <p>Clothes from your shop like Kurtis, one piece, western tops and the Tupperware container which we
+                    purchased are good quality and durable. Overall all the materials are awesome❣️❣️</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">
+                            Mrs.Saraswati Dhamanvaar
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box div-3">
+                <i class="fa fa-quote-left quote"></i>
+                <p>The Bandhani house of your collection is superr.....the Bandhani silk sarees and Bandhani silk
+                    dress materials are heartthrob for everyone🥰🥰</p>
+                <div class="content">
+                    <div class="info">
+                        <div class="name">
+                            Sakshi and Shrusti
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock body %}
+    <style>
+        .btn {
+            display: block;
+            position: absolute;
+            transform: translate(20%, 0%);
+            text-decoration: none;
+            background-color: orange;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 33px;
+            margin-top: 42px;
+        }
+
+        .btn:hover {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .nav {
+            display: block;
+        }
+
+        nav ul {
+            margin-top: 0px;
+            margin-left: 800px;
+
+        }
+
+        nav ul li a:hover {
+            background-color: #4D1A78;
+            padding: 10px;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .addtocart {
+            display: none;
+        }
+
+        @media (max-width:1281px) {
+            .btn {
+                font-size: 6vh;
+                margin-left: 6vh;
+            }
+
+            h1 {
+                font-size: 8vw;
+                text-align: center;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 110px
+            }
+
+            nav ul li {
+                display: block;
+                margin-top: -30px;
+            }
+
+            nav ul li a:hover {
+                background-color: #4D1A78;
+                padding: 10px;
+                font-size: 4.5vw;
+                color: white;
+            }
+
+            h2 {
+                font-size: 4vh;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .addtocart {
+                display: none;
+            }
+
+            nav ul li a {
+                font-size: 4vw;
+                margin-left: -240px;
+
+            }
+        }
+    </style>
+</body>

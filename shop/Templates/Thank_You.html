@@ -1,0 +1,53 @@
+{% extends 'Basic.html' %}
+{% block css %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+{% load static %}
+<link rel="stylesheet" href="{% static 'Basic.css' %}">
+<style>
+    .h4 {
+        margin: 42px;
+        margin-top: 350px;
+    }
+
+    .btn-track {
+        color: blue;
+        text-decoration: none;
+        margin: 650px;
+    }
+
+    .btn-track:hover {
+        text-decoration: none;
+    }
+
+    @media (max-width:1281px) {
+        .h4{
+            margin-top: 450px;
+        }
+
+        .btn-track{
+            margin: 180px;
+        }
+    }
+</style>
+{% endblock css %}
+
+{% block body %}
+<body>
+    {% for message in messages %}
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Message : </strong> {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+<h4 class="h4">Your Order is Placed Successfully ! Your order id is {{id}}. You can track your order using order id at
+    our order tracker page !</h4>
+
+<a href="/tracker" class="btn-track">Track Your Order</a>
+</body>
+
+
+{% endblock body %}
+
+{% block js %}
+{% endblock js %}

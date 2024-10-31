@@ -1,0 +1,155 @@
+body {
+    background: radial-gradient(white, #ffd6d6);
+}
+
+.h2container {
+    height: 250px;
+    width: fit-content;
+    margin-top: 140px;
+    margin-left: 14px;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+    transform: translate(20%, 0%);
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 33px;
+    margin-top: 50px;
+    margin-left: -42px;
+}
+
+.btn:hover {
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #4D1A78;
+}
+
+.hr2 {
+    margin-top: 150px;
+}
+
+.image{
+    float: right;
+    /* border: 10px blue solid; */
+    margin-top: -350px;
+    margin-right: 300px;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+}
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wrapper .box {
+    background-color: white;
+    border-radius: 3px;
+    padding: 25px;
+    width: calc(33% - 10px);
+    border: 3px black solid;
+    height: 260px;
+    margin-left: 93px;
+    margin-top: 10px;
+}
+
+.wrapper .box i .quote {
+    font-size: 20px;
+    color: #17a3b8;
+}
+
+.wrapper .box .content {
+    padding-top: 10px;
+}
+
+.wrapper .box .info .name {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.imgbx{
+    float: right;
+    width: 20%;
+    height: auto;
+    margin-left: 700px;
+    margin-top: -200px;
+}
+.imgbx img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width:1281px) {
+    .h2container {
+        margin-top: 500px;
+    }
+
+    .btn_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .btn {
+        margin-right: 71px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .addtocart {
+        display: none;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .wrapper .box {
+        width: calc(50% - 10px);
+        margin-top: 14px;
+    }
+    .wrapper .div-1{
+        height: 220px;
+        width: 250px;
+    }
+    .wrapper .div-2{
+        height: 350px;
+        width: 250px;
+    }
+    .wrapper .div-3{
+        height: 300px;
+        margin-bottom: 33px;
+        width: 250px;
+    }
+    .imgbx{
+        display: none;
+    }
+    .body{
+        margin-top: 51px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalaram Bandhani House</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+    {% block css %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'Basic.css' %}">
+    {% endblock css %}
+    <h1 class="h1">Jalaram Bandhani House</h1>
+    <nav class="nav">
+        <ul>
+            {% if user.is_authenticated %}
+            <li><a href="/" class="home">Home</a></li>
+            <li><a href="/contact" class="contact">Contact Me</a></li>
+            <li><a href="about" class="about">About Me</a></li>
+            <li><a href="tracker" class="tracker">Order Tracker</a></li>
+            <li><a href="profile" class="profile">Profile</a></li>
+            <li><a href="shop" class="shop">Explore More</a></li>
+            <li><a href="logged-out" class="logout">Logout</a></li>
+            <li><a class="addtocart" data-container="body" data-toggle="popover" data-placement="bottom"
+                    data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." id="popcart"
+                    data-html="true"> Cart (<span id="cart">0</span>)</a></li>
+            {% else %}
+            <li><a href="/" class="home">Home</a></li>
+            <li><a href="about" class="about">About Me</a></li>
+            <li><a href="login" class="login">Login</a></li>
+            <li><a href="signup" class="signup">Signup</a></li>
+            <li><a href="shop" class="shop">Explore More</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</head>
+{% block body %}{% endblock body %}
+{% block js %}{% endblock js %}
