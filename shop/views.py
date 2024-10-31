@@ -295,7 +295,7 @@ def Verifying(request):
 
             new_msg.set_content(string)
 
-            with open('shop/qr_code.jpeg', 'rb') as f:
+            with open('shop/qr_code.jpg', 'rb') as f:
                 image_data = f.read()
                 image_type = imghdr.what(f.name)
                 image_name = f.name
